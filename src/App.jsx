@@ -1,21 +1,11 @@
 import { HOGWARTS_HOUSES } from "./data.js";
 import Header from "./components/Header.jsx";
+import House from "./components/House.jsx";
 
 const studentDescriptions = ["Wizard", "Witch"];
 
 function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
-}
-
-function House({ image, title, values, description }) {
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <h5>{values}</h5>
-      <p>{description}</p>
-    </li>
-  );
 }
 
 function App() {
