@@ -42,35 +42,6 @@ main h2 {
   -webkit-text-fill-color: transparent;
 }
 
-#hogwarts-houses ul {
-  list-style: none;
-  padding: 0;
-  margin: 3rem 0 0 0;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#hogwarts-houses li {
-  width: 10rem;
-  text-align: center;
-}
-
-#hogwarts-houses li img {
-  height: 4rem;
-  width: 6rem;
-  object-fit: cover;
-}
-
-#hogwarts-houses li h3 {
-  margin: 0.5rem 0;
-}
-
-#hogwarts-houses li p {
-  font-size: 0.9rem;
-}
-
 #examples {
   margin: 3rem auto;
 }

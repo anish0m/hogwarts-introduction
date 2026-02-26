@@ -1,3 +1,5 @@
+import './House.css';
+
 export default function House({ image, title, values, description }) {
   return (
     <li>
