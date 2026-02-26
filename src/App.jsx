@@ -19,13 +19,13 @@ function Header() {
   );
 }
 
-function House(props) {
+function House({image, title, values, description}) {
   return (
     <li>
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <h5>{props.values}</h5>
-      <p>{props.description}</p>
+      <img src={image} alt={title} />
+      <h3>{title}</h3>
+      <h5>{values}</h5>
+      <p>{description}</p>
     </li>
   );
 }
