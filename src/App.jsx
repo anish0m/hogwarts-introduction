@@ -1,5 +1,5 @@
-import hogwartsLogo from "./assets/logo-hogwarts.png";
 import { HOGWARTS_HOUSES } from "./data.js";
+import Header from "./components/Header.jsx";
 
 const studentDescriptions = ["Wizard", "Witch"];
 
@@ -7,19 +7,7 @@ function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-function Header() {
-  return (
-    <header>
-      <img src={hogwartsLogo} alt="Hogwarts Logo" />
-      <h1>Hogwarts</h1>
-      <p>
-        <i>Draco dormiens nunquam titillandus</i>
-      </p>
-    </header>
-  );
-}
-
-function House({image, title, values, description}) {
+function House({ image, title, values, description }) {
   return (
     <li>
       <img src={image} alt={title} />
