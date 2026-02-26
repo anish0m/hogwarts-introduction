@@ -38,30 +38,10 @@ function App() {
         <section id="hogwarts-houses">
           <h2>Hogwarts Houses</h2>
           <ul>
-            <House
-              title={HOGWARTS_HOUSES[0].title}
-              values={HOGWARTS_HOUSES[0].values}
-              description={HOGWARTS_HOUSES[0].description}
-              image={HOGWARTS_HOUSES[0].image}
-            />
-            <House
-              title={HOGWARTS_HOUSES[1].title}
-              values={HOGWARTS_HOUSES[1].values}
-              description={HOGWARTS_HOUSES[1].description}
-              image={HOGWARTS_HOUSES[1].image}
-            />
-            <House
-              title={HOGWARTS_HOUSES[2].title}
-              values={HOGWARTS_HOUSES[2].values}
-              description={HOGWARTS_HOUSES[2].description}
-              image={HOGWARTS_HOUSES[2].image}
-            />
-            <House
-              title={HOGWARTS_HOUSES[3].title}
-              values={HOGWARTS_HOUSES[3].values}
-              description={HOGWARTS_HOUSES[3].description}
-              image={HOGWARTS_HOUSES[3].image}
-            />
+            <House {...HOGWARTS_HOUSES[0]} />
+            <House {...HOGWARTS_HOUSES[1]} />
+            <House {...HOGWARTS_HOUSES[2]} />
+            <House {...HOGWARTS_HOUSES[3]} />
           </ul>
         </section>
         <h2>
