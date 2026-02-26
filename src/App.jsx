@@ -1,8 +1,5 @@
 import hogwartsLogo from "./assets/logo-hogwarts.png";
-import gryffindorLogo from "./assets/logo-gryffindor.png";
-import hufflepuffLogo from "./assets/logo-hufflepuff.png";
-import ravenclawLogo from "./assets/logo-ravenclaw.png";
-import slytherinLogo from "./assets/logo-slytherin.png";
+import { HOGWARTS_HOUSES } from "./data.js";
 
 const studentDescriptions = ["Wizard", "Witch"];
 
@@ -42,28 +39,28 @@ function App() {
           <h2>Hogwarts Houses</h2>
           <ul>
             <House
-              title="Gryffindor"
-              values="Courage, Bravery, Nerve, Chivalry"
-              description="Being home of the courageous, Gryffindor house's emblematic animal is the lion, and its colors are scarlet and gold."
-              image={gryffindorLogo}
+              title={HOGWARTS_HOUSES[0].title}
+              values={HOGWARTS_HOUSES[0].values}
+              description={HOGWARTS_HOUSES[0].description}
+              image={HOGWARTS_HOUSES[0].image}
             />
             <House
-              title="Hufflepuff"
-              values="Hard Work, Patience, Loyalty, Fair Play"
-              description="Being home of the hardworking, Hufflepuff house's emblematic animal is the badger, and its colors are yellow and black."
-              image={hufflepuffLogo}
+              title={HOGWARTS_HOUSES[1].title}
+              values={HOGWARTS_HOUSES[1].values}
+              description={HOGWARTS_HOUSES[1].description}
+              image={HOGWARTS_HOUSES[1].image}
             />
             <House
-              title="Ravenclaw"
-              values="Intelligence, Creativity, Learning, Wit"
-              description="Being home of the intelligent, Ravenclaw house's emblematic animal is the eagle, and its colors are blue and silver."
-              image={ravenclawLogo}
+              title={HOGWARTS_HOUSES[2].title}
+              values={HOGWARTS_HOUSES[2].values}
+              description={HOGWARTS_HOUSES[2].description}
+              image={HOGWARTS_HOUSES[2].image}
             />
             <House
-              title="Slytherin"
-              values="Ambition, Cunning, Resourcefulness"
-              description="Being home of the ambitious, Slytherin house's emblematic animal is the serpent, and its colors are green and silver."
-              image={slytherinLogo}
+              title={HOGWARTS_HOUSES[3].title}
+              values={HOGWARTS_HOUSES[3].values}
+              description={HOGWARTS_HOUSES[3].description}
+              image={HOGWARTS_HOUSES[3].image}
             />
           </ul>
         </section>
