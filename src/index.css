@@ -94,3 +94,28 @@ main h2 {
 #tab-content code {
   font-size: 1rem;
 }
+
+#sorting-ceremony {
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 6px;
+  background: transparent;
+}
+
+#sorting-ceremony a {
+  cursor: pointer;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sorting-ceremony h3 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

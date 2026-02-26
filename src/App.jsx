@@ -22,11 +22,20 @@ function App() {
             <House {...HOGWARTS_HOUSES[3]} />
           </ul>
         </section>
-        <h2>
-          Time for our young{" "}
-          {studentDescriptions[genRandomInt(studentDescriptions.length - 1)]} to
-          get sorted!
-        </h2>
+        <section id="sorting-ceremony">
+          <a href="https://www.harrypotter.com/news/discover-your-hogwarts-house-on-wizarding-world">
+            <h3>
+              Time for our young{" "}
+              {
+                studentDescriptions[
+                  genRandomInt(studentDescriptions.length - 1)
+                ]
+              }{" "}
+              to get sorted!
+            </h3>
+            <img src="./arrow-right.svg" alt="arrow pointing right" />
+          </a>
+        </section>
       </main>
     </div>
   );
