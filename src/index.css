@@ -57,7 +57,7 @@ main {
   margin: auto;
 }
 
-#core-concepts {
+#hogwarts-houses {
   padding: 2rem;
   border-radius: 6px;
   background-color: #140524;
@@ -74,32 +74,32 @@ main h2 {
   -webkit-text-fill-color: transparent;
 }
 
-#core-concepts ul {
+#hogwarts-houses ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 3rem 0 0 0;
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#core-concepts li {
+#hogwarts-houses li {
   width: 10rem;
   text-align: center;
 }
 
-#core-concepts li img {
+#hogwarts-houses li img {
   height: 4rem;
   width: 6rem;
   object-fit: cover;
 }
 
-#core-concepts li h3 {
+#hogwarts-houses li h3 {
   margin: 0.5rem 0;
 }
 
-#core-concepts li p {
+#hogwarts-houses li p {
   font-size: 0.9rem;
 }
 
