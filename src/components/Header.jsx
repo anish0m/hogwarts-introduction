@@ -1,3 +1,4 @@
+import './Header.css';
 import hogwartsLogo from "../assets/logo-hogwarts.png";
 
 export default function Header() {
