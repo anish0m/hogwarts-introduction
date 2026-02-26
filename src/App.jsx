@@ -1,3 +1,5 @@
+import hogwartsLogo from './assets/logo-hogwarts.png';
+
 const studentDescriptions = ['Wizard', 'Witch'];
 
 function genRandomInt(max) {
@@ -7,7 +9,7 @@ function genRandomInt(max) {
 function Header() {
   return (
     <header>
-      <img src="src/assets/logo-hogwarts.png" alt="Stylized atom" />
+      <img src={hogwartsLogo} alt="Stylized atom" />
       <h1>Hogwarts</h1>
       <p>
         <i>Draco dormiens nunquam titillandus</i>
