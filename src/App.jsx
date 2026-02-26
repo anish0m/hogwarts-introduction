@@ -1,15 +1,21 @@
+function Header() {
+  return (
+    <header>
+      <img src="src/assets/logo-hogwarts.png" alt="Stylized atom" />
+      <h1>Hogwarts</h1>
+      <p>
+        <i>Draco dormiens nunquam titillandus</i>
+      </p>
+    </header>
+  );
+}
+
 function App() {
   return (
     <div>
-      <header>
-        <img src="src/assets/logo-hogwarts.png" alt="Stylized atom" />
-        <h1>Hogwarts</h1>
-        <p>
-          <i>Draco dormiens nunquam titillandus</i>
-        </p>
-      </header>
+      <Header />
       <main>
-        <h2>Time to get sorted!</h2>
+        <h2>Time for our young wizards to get sorted!</h2>
       </main>
     </div>
   );
