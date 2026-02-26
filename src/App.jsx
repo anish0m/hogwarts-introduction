@@ -1,6 +1,6 @@
 import { HOGWARTS_HOUSES } from "./data.js";
-import Header from "./components/Header.jsx";
-import House from "./components/House.jsx";
+import Header from "./components/Header/Header.jsx";
+import House from "./components/House/House.jsx";
 
 const studentDescriptions = ["Wizard", "Witch"];
 

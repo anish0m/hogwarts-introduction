@@ -1,5 +1,5 @@
 import './Header.css';
-import hogwartsLogo from "../assets/logo-hogwarts.png";
+import hogwartsLogo from "../../assets/logo-hogwarts.png";
 
 export default function Header() {
   return (
