@@ -1,3 +1,9 @@
+const studentDescriptions = ['Wizard', 'Witch'];
+
+function genRandomInt(max) {
+  return Math.floor(Math.random() * (max + 1));
+}
+
 function Header() {
   return (
     <header>
@@ -15,7 +21,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <h2>Time for our young wizards to get sorted!</h2>
+        <h2>Time for our young {studentDescriptions[genRandomInt(studentDescriptions.length - 1)]} to get sorted!</h2>
       </main>
     </div>
   );
