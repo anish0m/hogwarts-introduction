@@ -1,6 +1,7 @@
 import { HOGWARTS_HOUSES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
 import House from "./components/House/House.jsx";
+import TabButton from "./components/TabButton.jsx";
 
 const studentDescriptions = ["Wizard", "Witch"];
 
@@ -22,6 +23,17 @@ function App() {
             <House {...HOGWARTS_HOUSES[3]} />
           </ul>
         </section>
+
+        <section id="hogwarts-all">
+          <h2>Everything about Hogwarts Life</h2>
+          <menu>
+            <TabButton>Academics</TabButton>
+            <TabButton>Quidditch</TabButton>
+            <TabButton>Clubs</TabButton>
+            <TabButton>Trip to Hogsmede</TabButton>
+          </menu>
+        </section>
+
         <section id="sorting-ceremony">
           <a href="https://www.harrypotter.com/news/discover-your-hogwarts-house-on-wizarding-world">
             <h3>
