@@ -10,6 +10,9 @@ function genRandomInt(max) {
 }
 
 function App() {
+  function handleSelect(tabName) {
+    console.log(`${tabName} selected`);
+  }
   return (
     <div>
       <Header />
@@ -27,10 +30,10 @@ function App() {
         <section id="hogwarts-all">
           <h2>Everything about Hogwarts Life</h2>
           <menu>
-            <TabButton>Academics</TabButton>
-            <TabButton>Quidditch</TabButton>
-            <TabButton>Clubs</TabButton>
-            <TabButton>Trip to Hogsmede</TabButton>
+            <TabButton onSelect={() => handleSelect("Academics")}>Academics</TabButton>
+            <TabButton onSelect={() => handleSelect("Quidditch")}>Quidditch</TabButton>
+            <TabButton onSelect={() => handleSelect("Clubs")}>Clubs</TabButton>
+            <TabButton onSelect={() => handleSelect("Trip to Hogsmede")}>Trip to Hogsmede</TabButton>
           </menu>
         </section>
 
