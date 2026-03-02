@@ -1,3 +1,4 @@
+import { use, useState } from "react";
 import { HOGWARTS_HOUSES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
 import House from "./components/House/House.jsx";
@@ -10,8 +11,11 @@ function genRandomInt(max) {
 }
 
 function App() {
+  const [ selectedTabContent, setSelectedTabContent ] = useState('Select a tab to see more about Hogwarts life');
+  
   function handleSelect(selectedTab) {
-    console.log(`${selectedTab} selected`);
+    setSelectedTabContent(selectedTab);
+    console.log(selectedTabContent);
   }
   return (
     <div>
@@ -35,6 +39,7 @@ function App() {
             <TabButton onSelect={() => handleSelect("clubs")}>Clubs in Hogwarts</TabButton>
             <TabButton onSelect={() => handleSelect("hogsmede")}>Trip to Hogsmede</TabButton>
           </menu>
+          {selectedTabContent}
         </section>
 
         <section id="sorting-ceremony">
