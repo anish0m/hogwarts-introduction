@@ -3,6 +3,7 @@ import { HOGWARTS_HOUSES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
 import House from "./components/House/House.jsx";
 import TabButton from "./components/TabButton.jsx";
+import { CONTENTS } from "./data.js";
 
 const studentDescriptions = ["Wizard", "Witch"];
 
@@ -11,8 +12,8 @@ function genRandomInt(max) {
 }
 
 function App() {
-  const [ selectedTabContent, setSelectedTabContent ] = useState('Select a tab to see more about Hogwarts life');
-  
+  const [selectedTabContent, setSelectedTabContent] = useState("academics");
+
   function handleSelect(selectedTab) {
     setSelectedTabContent(selectedTab);
     console.log(selectedTabContent);
@@ -34,12 +35,31 @@ function App() {
         <section id="hogwarts-all">
           <h2>Everything about Hogwarts Life</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect("academics")}>Academic Curriculum</TabButton>
-            <TabButton onSelect={() => handleSelect("quidditch")}>Quidditch Matches</TabButton>
-            <TabButton onSelect={() => handleSelect("clubs")}>Clubs in Hogwarts</TabButton>
-            <TabButton onSelect={() => handleSelect("hogsmede")}>Trip to Hogsmede</TabButton>
+            <TabButton onSelect={() => handleSelect("academics")}>
+              Academic Curriculum
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("quidditch")}>
+              Quidditch Matches
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("clubs")}>
+              Clubs in Hogwarts
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("hogsmeade")}>
+              Trip to Hogsmeade
+            </TabButton>
           </menu>
-          {selectedTabContent}
+          <div id="tab-content">
+            <h3>{CONTENTS[selectedTabContent].title}</h3>
+            <p>{CONTENTS[selectedTabContent].description}</p>
+            <img
+              src={CONTENTS[selectedTabContent].source}
+              alt={CONTENTS[selectedTabContent].title}
+            />
+            <a href={CONTENTS[selectedTabContent].link.url}>
+              <h5>{CONTENTS[selectedTabContent].link.text}</h5>
+              <i class="bi bi-arrow-right-short"></i>
+            </a>
+          </div>
         </section>
 
         <section id="sorting-ceremony">
@@ -53,7 +73,7 @@ function App() {
               }{" "}
               to get sorted!
             </h3>
-            <img src="./arrow-right.svg" alt="arrow pointing right" />
+            <i class="bi bi-arrow-right-short"></i>
           </a>
         </section>
       </main>
