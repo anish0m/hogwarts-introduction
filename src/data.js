@@ -3,6 +3,11 @@ import hufflepuffLogo from "./assets/logo-hufflepuff.png";
 import ravenclawLogo from "./assets/logo-ravenclaw.png";
 import slytherinLogo from "./assets/logo-slytherin.png";
 
+import academicsTabImg from "./assets/hogwarts-professors.png";
+import quidditchTabImg from "./assets/quidditch-pitch.png";
+import clubsTabImg from "./assets/hogwarts-clubs.png";
+import hogsmeadeTabImg from "./assets/hogsmeade-village.png";
+
 export const HOGWARTS_HOUSES = [
   {
     image: gryffindorLogo,
@@ -39,48 +44,40 @@ export const CONTENTS = {
     title: "Academic Curriculum",
     description:
       "Explore the magical subjects taught at Hogwarts, from Potions and Transfiguration to Defense Against the Dark Arts. Discover how first-years are introduced to the wizarding world through a blend of theory and practical lessons, guided by expert professors and enchanted textbooks.",
-    code: `
-function Welcome() {
-  return <h1>Hello, first-years!</h1>;
-}`,
+    source: academicsTabImg,
+    link: {
+      text: "Learn more about Hogwarts curriculum",
+      url: "https://harrypotter.fandom.com/wiki/Hogwarts_curriculum"
+    }
   },
   quidditch: {
     title: "Quidditch Matches",
     description:
       "Experience the thrill of Quidditch, the most popular sport in the wizarding world! Learn about the different player positions, the rules of the game, and the excitement of house rivalries as students compete for the coveted Quidditch Cup.",
-    code: `
-<div>
-  <h1>Welcome to Quidditch ground!</h1>
-  <p>Time to pick a role you wanna play!</p>
-</div>`,
+    source: quidditchTabImg,
+    link: {
+      text: "Learn more about Quidditch",
+      url: "https://harrypotter.fandom.com/wiki/Quidditch"
+    }
   },
   clubs: {
     title: "Clubs in Hogwarts",
     description:
       "Hogwarts offers a variety of clubs for students to pursue their interests and talents outside of class. From the Dueling Club to the Gobstones Club, find out how students connect, collaborate, and compete in friendly gatherings throughout the year.",
-    code: `
-function Welcome(props) {
-  return <h1>Hello, Welcome to club selection day!</h1>;
-}`,
+    source: clubsTabImg,
+    link: {
+      text: "Learn more about Hogwarts clubs",
+      url: "https://harrypotter.fandom.com/wiki/Hogwarts_clubs"
+    }
   },
-  hogsmede: {
-    title: "Trip to Hogsmede",
+  hogsmeade: {
+    title: "Trip to Hogsmeade",
     description:
-      "Join the magical excursions to Hogsmede, the only all-wizarding village in Britain. Discover the delights of Honeydukes, Zonko’s Joke Shop, and the Shrieking Shack as students enjoy a day of fun, treats, and adventure outside the castle walls.",
-    code: `
-function Counter() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  function handleClick() {
-    setIsVisible(true);
+      "Join the magical excursions to Hogsmeade, the only all-wizarding village in Britain. Discover the delights of Honeydukes, Zonko’s Joke Shop, and the Shrieking Shack as students enjoy a day of fun, treats, and adventure outside the castle walls.",
+    source: hogsmeadeTabImg,
+    link: {
+      text: "Learn more about Hogsmeade",
+      url: "https://harrypotter.fandom.com/wiki/Hogsmeade"
+    }
   }
-
-  return (
-    <div>
-      <button onClick={handleClick}>Show Details</button>
-      {isVisible && <p>Amazing details!</p>}
-    </div>
-  );
-}`,
-  },
 };
