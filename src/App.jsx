@@ -35,16 +35,28 @@ function App() {
         <section id="hogwarts-all">
           <h2>Everything about Hogwarts Life</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect("academics")}>
+            <TabButton
+              isSelected={selectedTabContent === "academics"}
+              onSelect={() => handleSelect("academics")}
+            >
               Academic Curriculum
             </TabButton>
-            <TabButton onSelect={() => handleSelect("quidditch")}>
+            <TabButton
+              isSelected={selectedTabContent === "quidditch"}
+              onSelect={() => handleSelect("quidditch")}
+            >
               Quidditch Matches
             </TabButton>
-            <TabButton onSelect={() => handleSelect("clubs")}>
+            <TabButton
+              isSelected={selectedTabContent === "clubs"}
+              onSelect={() => handleSelect("clubs")}
+            >
               Clubs in Hogwarts
             </TabButton>
-            <TabButton onSelect={() => handleSelect("hogsmeade")}>
+            <TabButton
+              isSelected={selectedTabContent === "hogsmeade"}
+              onSelect={() => handleSelect("hogsmeade")}
+            >
               Trip to Hogsmeade
             </TabButton>
           </menu>
@@ -61,7 +73,7 @@ function App() {
                 />
                 <a href={CONTENTS[selectedTabContent].link.url}>
                   <h5>{CONTENTS[selectedTabContent].link.text}</h5>
-                  <i class="bi bi-arrow-right-short"></i>
+                  <i className="bi bi-arrow-right-short"></i>
                 </a>
               </div>
             )}
@@ -79,7 +91,7 @@ function App() {
               }{" "}
               to get sorted!
             </h3>
-            <i class="bi bi-arrow-right-short"></i>
+            <i className="bi bi-arrow-right-short"></i>
           </a>
         </section>
       </main>
