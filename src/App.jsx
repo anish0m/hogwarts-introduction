@@ -12,7 +12,7 @@ function genRandomInt(max) {
 }
 
 function App() {
-  const [selectedTabContent, setSelectedTabContent] = useState("academics");
+  const [selectedTabContent, setSelectedTabContent] = useState();
 
   function handleSelect(selectedTab) {
     setSelectedTabContent(selectedTab);
@@ -49,16 +49,22 @@ function App() {
             </TabButton>
           </menu>
           <div id="tab-content">
-            <h3>{CONTENTS[selectedTabContent].title}</h3>
-            <p>{CONTENTS[selectedTabContent].description}</p>
-            <img
-              src={CONTENTS[selectedTabContent].source}
-              alt={CONTENTS[selectedTabContent].title}
-            />
-            <a href={CONTENTS[selectedTabContent].link.url}>
-              <h5>{CONTENTS[selectedTabContent].link.text}</h5>
-              <i class="bi bi-arrow-right-short"></i>
-            </a>
+            {!selectedTabContent ? (
+              <h4>What do you want to explore?</h4>
+            ) : (
+              <div>
+                <h3>{CONTENTS[selectedTabContent].title}</h3>
+                <p>{CONTENTS[selectedTabContent].description}</p>
+                <img
+                  src={CONTENTS[selectedTabContent].source}
+                  alt={CONTENTS[selectedTabContent].title}
+                />
+                <a href={CONTENTS[selectedTabContent].link.url}>
+                  <h5>{CONTENTS[selectedTabContent].link.text}</h5>
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            )}
           </div>
         </section>
 

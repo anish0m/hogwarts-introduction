@@ -88,7 +88,7 @@ main h2 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-#tab-content h3 {
+#tab-content h4 h3 {
   margin: 0;
 }
 
