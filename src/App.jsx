@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { HOGWARTS_HOUSES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
-import House from "./components/House/House.jsx";
+import Houses from "./components/Houses/Houses.jsx";
 import TabButton from "./components/TabButton.jsx";
 import { CONTENTS } from "./data.js";
 
@@ -22,15 +21,7 @@ function App() {
     <>
       <Header />
       <main>
-        <section id="hogwarts-houses">
-          <h2>Hogwarts Houses</h2>
-          <ul>
-            {HOGWARTS_HOUSES.map((house) => (
-              <House key={house.name} {...house} />
-            ))}
-          </ul>
-        </section>
-
+        <Houses />
         <section id="hogwarts-all">
           <h2>Everything about Hogwarts Life</h2>
           <menu>
