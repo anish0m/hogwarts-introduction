@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import { HOGWARTS_HOUSES } from "./data.js";
 import Header from "./components/Header/Header.jsx";
 import House from "./components/House/House.jsx";
@@ -19,7 +19,7 @@ function App() {
     console.log(selectedTabContent);
   }
   return (
-    <Fragment>
+    <>
       <Header />
       <main>
         <section id="hogwarts-houses">
@@ -94,7 +94,7 @@ function App() {
           </a>
         </section>
       </main>
-    </Fragment>
+    </>
   );
 }
 
