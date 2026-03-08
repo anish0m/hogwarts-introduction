@@ -26,7 +26,7 @@ function App() {
           <h2>Hogwarts Houses</h2>
           <ul>
             {HOGWARTS_HOUSES.map((house) => (
-              <House {...house} />
+              <House key={house.name} {...house} />
             ))}
           </ul>
         </section>
