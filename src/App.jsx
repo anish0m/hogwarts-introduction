@@ -25,10 +25,9 @@ function App() {
         <section id="hogwarts-houses">
           <h2>Hogwarts Houses</h2>
           <ul>
-            <House {...HOGWARTS_HOUSES[0]} />
-            <House {...HOGWARTS_HOUSES[1]} />
-            <House {...HOGWARTS_HOUSES[2]} />
-            <House {...HOGWARTS_HOUSES[3]} />
+            {HOGWARTS_HOUSES.map((house) => (
+              <House {...house} />
+            ))}
           </ul>
         </section>
 
