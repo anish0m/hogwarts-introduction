@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TabButton from "../TabButton.jsx";
+import Section from "../Section.jsx";
 import { CONTENTS } from "../../data.js";
 
 import "./Details.css";
@@ -13,8 +14,7 @@ export function Details() {
   }
 
   return (
-    <section id="hogwarts-all">
-      <h2>Everything about Hogwarts Life</h2>
+    <Section title="Everything about Hogwarts Life" id="hogwarts-all">
       <menu>
         <TabButton
           isSelected={selectedTabContent === "academics"}
@@ -59,6 +59,6 @@ export function Details() {
           </div>
         )}
       </div>
-    </section>
+    </Section>
   );
 }
