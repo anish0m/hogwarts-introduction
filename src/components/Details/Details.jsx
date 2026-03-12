@@ -18,25 +18,25 @@ export function Details() {
       <menu>
         <TabButton
           isSelected={selectedTabContent === "academics"}
-          onSelect={() => handleSelect("academics")}
+          onClick={() => handleSelect("academics")}
         >
           Academic Curriculum
         </TabButton>
         <TabButton
           isSelected={selectedTabContent === "quidditch"}
-          onSelect={() => handleSelect("quidditch")}
+          onClick={() => handleSelect("quidditch")}
         >
           Quidditch Matches
         </TabButton>
         <TabButton
           isSelected={selectedTabContent === "clubs"}
-          onSelect={() => handleSelect("clubs")}
+          onClick={() => handleSelect("clubs")}
         >
           Clubs in Hogwarts
         </TabButton>
         <TabButton
           isSelected={selectedTabContent === "hogsmeade"}
-          onSelect={() => handleSelect("hogsmeade")}
+          onClick={() => handleSelect("hogsmeade")}
         >
           Trip to Hogsmeade
         </TabButton>
